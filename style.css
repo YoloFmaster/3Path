@@ -14,6 +14,14 @@ form{
     margin: 20px;
 }
 
+footer{
+    height: 10vh;
+    background-color: rgb(135, 135, 135, 0.33);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 @media screen and (max-width: 576px) {
     form{
         position: relative;
