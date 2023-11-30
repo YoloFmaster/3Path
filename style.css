@@ -8,16 +8,49 @@
     max-width: 70%;
 }
 
+.idiot{
+    max-width: 69.6%;
+    margin-left: 110px;
+}
+
 form{
     position: relative;
     text-align: center;
     margin: 20px;
 }
 
+.form-check-label{
+    float: left;
+}
+
+.info__body {
+    display: none;
+    transition: 0.4s;
+}
+
+.h2{
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.h3PC{
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.info__switch:checked~.info__body {
+    display: block;
+}
+
+main{
+    min-height: 100vh;
+}
+
 footer{
     height: 10vh;
-    background-color: rgb(135, 135, 135, 0.33);
-    position: fixed;
+    background-color: rgba(235, 235, 235, 0.33);
+    position: sticky;
     bottom: 0;
     width: 100%;
 }
@@ -31,6 +64,11 @@ footer{
 
     .row>*{
         max-width: 90%;
+    }
+
+    .idiot{
+        max-width: 90%;
+        margin-left: 0px;
     }
     
 }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private cabinet</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="Photo/logo.jpg" alt="Bootstrap" width="140" height="140">
+            </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Catalog.html">Пропавшие животные</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="AddAnimals.html">Добавить обьявления</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Registration.html">Регистрация</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="LogIn.html">Вход</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="PrivateCabinet.html">Личный кабинет</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+              <button class="btn btn-outline-success" type="submit">Поиск</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+  </header>
+    <main>
+        <div class="h3PC">
+            <h3>Информация о пользователе</h3>
+            <p class="card-text">Имя: Алексей</p>
+            <p class="card-text">Телефон: 8 800 555 35 35</p>
+            <p class="card-text">Email: forestmarket@gmail.com</p>
+            <p class="card-text">Дата: 12.02.2021</p>
+            <p class="card-text">Сколько дней зарегистрирован: 1 021</p>
+            <p class="card-text">Сколько обьявленний добавил: 2</p>
+            <p class="card-text">Сколько обьявленний добавил, у которых нашлисб хозяева: 1</p>
+        </div>
+        <h3 class="m-4">Карточки, которые добавил пользователь</h3>
+        <div class="d-flex p-2  justify-content-around flex-wrap">
+            <div class="card m-2" style="width: 18rem; min-width: 300px;">
+                <img src="Photo/Toothless.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Беззубик</h5>
+                    <p class="card-text">id: 5</p>
+                    <p class="card-text">Вид животного: Дракон</p>
+                    <p class="card-text">Описание: Ночная фурия, любит играть и плюётся огнём, может исчезать, ведёт себя как кошечка, очень милый</p>
+                    <p class="card-text">Номер чипа: aa-001-spb</p>
+                    <p class="card-text">Район: Красногвардейский</p>
+                    <p class="card-text">Дата: 12.02.2021</p>
+                    <a href="#" class="btn btn-primary">Перейти</a>
+                </div>
+            </div>
+        </div>
+        <h3 class="m-4">Карточки, которые добавил пользователь</h3>
+        <div class="d-flex p-2  justify-content-around flex-wrap">
+            <div class="card m-2" style="width: 18rem; min-width: 300px;">
+                <img src="Photo/Appa.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Аппа</h5>
+                    <p class="card-text">id: 7</p>
+                    <p class="card-text">Вид животного: Воздушный безон</p>
+                    <p class="card-text">Описание: Воздушный безон, летает и леняет 2 раза в год по полгода</p>
+                    <p class="card-text">Номер чипа: ca-021-spb</p>
+                    <p class="card-text">Район: Шушары</p>
+                    <p class="card-text">Дата: 12.04.2003</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+      <h3>ZooShop © Copyright, 2023</h3>
+      <p>Все ваши права не защищены</p>
+    </footer>
+</body>
+</html>

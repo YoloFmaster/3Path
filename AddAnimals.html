@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+    <title>Add animals</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -30,7 +30,7 @@
                 <a class="nav-link" href="AddAnimals.html">Добавить обьявления</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Registration.html ">Регистрация</a>
+                <a class="nav-link" href="Registration.html">Регистрация</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="LogIn.html">Вход</a>
@@ -58,7 +58,7 @@
             <div class="row mb-3">
                 <label for="inputTelephone3" class="col-sm-2 col-form-label">Телефон</label>
                 <div class="col-sm-10">
-                  <input title="Телефон должен состоять из 11 цифр." class="form-control" id="inputTelephone3" pattern="[0-9]{11}" required/>
+                  <input type="text" class="form-control" id="inputTelephone3">
                 </div>
             </div>
             <div class="row mb-3">
@@ -67,18 +67,32 @@
                 <input type="email" class="form-control" id="inputEmail3">
               </div>
             </div>
-            <div class="row mb-3">
-              <label for="inputPassword3" class="col-sm-2 col-form-label">Пароль</label>
-              <div class="col-sm-10">
-                <input type="password" class="form-control" id="inputPassword3">
+            <div class="mb-3 idiot">
+                <input type="file" class="form-control" aria-label="file example" required>
+                <div class="invalid-feedback">Пример обратной связи неверной формы выбора файла</div>
               </div>
+            <div>
+                <div class="row mb-3">
+                    <div class="col-sm-10 offset-sm-2">
+                      <div class="form-check">
+                        <input class="form-check-input info__switch" type="checkbox" id="gridCheck2">
+                        <label class="form-check-label" for="gridCheck2">
+                            Если вы хотите при этом ещё и зарегистрироваться
+                        </label>
+                        <div class="row mb-3 info__body">
+                            <div class="col-sm-10">
+                              <input type="password" class="form-control" id="inputPassword3" placeholder="Пароль">
+                            </div>
+                          </div>
+                          <div class="row mb-3 info__body">
+                              <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPasswordConfirm3" placeholder="Подтвердите пароль">
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
-            <div class="row mb-3">
-                <label for="inputPasswordConfirm3" class="col-sm-2 col-form-label">Подтвердите пароль</label>
-                <div class="col-sm-10">
-                  <input type="password" class="form-control" id="inputPasswordConfirm3">
-                </div>
-              </div>
               <div class="row mb-3">
                 <div class="col-sm-10 offset-sm-2">
                   <div class="form-check">
@@ -89,7 +103,7 @@
                   </div>
                 </div>
               </div>
-            <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+            <button type="submit" class="btn btn-primary">Добавить</button>
           </form>
     </main>
     <footer>
